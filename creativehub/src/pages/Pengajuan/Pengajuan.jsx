@@ -17,20 +17,20 @@ import { ref, getDownloadURL, uploadBytesResumable } from 'firebase/storage'
 const validation = Yup.object().shape({
     namaIntansi: Yup.
                 string().
-                required("Kolom Nama Intansi Wajib di Isi").
+                required("Nama Intansi Wajib di Isi").
                 min(3, "Nama Intansi Minimal Terdiri Dari 3 Huruf"),
     namaKegiatan : Yup.
                 string().
-                required("Kolom Nama Kegiatan Wajib di Isi").
+                required("Nama Kegiatan Wajib di Isi").
                 min(3, "Nama Kegiatan Minimal Terdiri Dari 3 Huruf"),
     jamKegiatan: Yup.
                 string().
-                required("Kolom Jam Kegiatan Wajib di Isi"),
+                required("Jam Kegiatan Wajib di Isi"),
     ruangan: Yup.
             string().
-            required("Kolom Ruangan Wajib di Isi"),
+            required("Ruangan Wajib di Isi"),
     deskripsiKegiatan: Yup.
-                string().required("Kolom deskripsi Kegiatan Wajib di Isi").
+                string().required("Deskripsi Kegiatan Wajib di Isi").
                 min(10, "Deskripsi Kegiatan Minimal Terdiri Dari 10 Huruf"),
     ktp: Yup.
           mixed().
