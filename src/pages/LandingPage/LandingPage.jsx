@@ -21,7 +21,7 @@ function LandingPage() {
       <div className="section-photo">
         <div className="row flex justify-center">
           <div className="w-[900px]">
-            <img src="\src\assets\rk-sectionone.png" alt="ridwankamil" className='py-8' />
+            <img src="src\assets\rk-sectionone.png" alt="ridwankamil" className='py-8' />
           </div>
         </div>
       </div>
