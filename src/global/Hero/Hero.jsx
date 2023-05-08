@@ -1,4 +1,5 @@
 import React from 'react'
+import heroPhoto3 from '../../assets/hero-photo3.png'
 
 function Hero() {
   return (
@@ -13,7 +14,7 @@ function Hero() {
       </div>
       <div className="row flex gap-5 my-10 justify-center">
         <div className="col">
-          <img src='src\assets\hero-photo3.png' alt="" />
+          <img src={heroPhoto3} alt="" />
         </div>
         <div className="col">
           <img src='src\assets\hero-photo2.png' alt="" />
