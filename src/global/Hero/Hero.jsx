@@ -1,5 +1,7 @@
 import React from 'react'
 import heroPhoto3 from '../../assets/hero-photo3.png'
+import heroPhoto2 from '../../assets/hero-photo2.png'
+import heroPhoto1 from '../../assets/hero-photo1.png'
 
 function Hero() {
   return (
@@ -17,10 +19,10 @@ function Hero() {
           <img src={heroPhoto3} alt="" />
         </div>
         <div className="col">
-          <img src='src\assets\hero-photo2.png' alt="" />
+        <img src={heroPhoto2} alt="" />
         </div>
         <div className="col">
-          <img src='src\assets\hero-photo1.png' alt="" />
+        <img src={heroPhoto1} alt="" />
         </div>
       </div>
     </div>

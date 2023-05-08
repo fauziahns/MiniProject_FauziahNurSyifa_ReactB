@@ -3,6 +3,17 @@ import Navbar from '../../global/Navbar/Navbar'
 import Hero from '../../global/Hero/Hero'
 import Button from '../../global/Button/Button'
 import Footer from '../../global/Footer/Footer'
+import sectionOne from '../../assets/rk-sectionone.png'
+import photoRuangan1 from '../../assets/photo-ruangan1.png'
+import photoRuangan2 from '../../assets/photo-ruangan2.png'
+import photoRuangan3 from '../../assets/photo-ruangan3.png'
+import photoRuangan4 from '../../assets/photo-ruangan4.png'
+import imageTwo from '../../assets/image2.png'
+import dokumentai1 from '../../assets/dokumentasi1.png'
+import dokumentai2 from '../../assets/dokumentasi2.png'
+import dokumentai3 from '../../assets/dokumentasi3.png'
+import dokumentai4 from '../../assets/dokumentasi4.png'
+import dokumentai5 from '../../assets/dokumentasi5.png'
 
 function LandingPage() {
   return (
@@ -21,7 +32,7 @@ function LandingPage() {
       <div className="section-photo">
         <div className="row flex justify-center">
           <div className="w-[900px]">
-            <img src="src\assets\rk-sectionone.png" alt="ridwankamil" className='py-8' />
+            <img src={sectionOne} alt="ridwankamil" className='py-8' />
           </div>
         </div>
       </div>
@@ -36,10 +47,10 @@ function LandingPage() {
       <div className="section-two py-[20px]">
         <h1 className='text-black font-bold text-[30px] ps-[120px] py-[50px]'>Ruangan di <a className='text-[#4750BF]'> Creative</a> Hub Bandung</h1>
           <div className="row flex gap-5 justify-center pb-[150px]">
-            <img src="src\assets\photo-ruangan1.png" alt="" className='rounded hover:scale-90 ease-in duration-500' />
-            <img src="src\assets\photo-ruangan2.png" alt="" className='rounded hover:scale-90 ease-in duration-500' />
-            <img src="src\assets\photo-ruangan3.png" alt="" className='rounded hover:scale-90 ease-in duration-500' />
-            <img src="src\assets\photo-ruangan4.png" alt="" className='rounded hover:scale-90 ease-in duration-500' />
+            <img src={photoRuangan1} alt="" className='rounded hover:scale-90 ease-in duration-500' />
+            <img src={photoRuangan2} alt="" className='rounded hover:scale-90 ease-in duration-500' />
+            <img src={photoRuangan3} alt="" className='rounded hover:scale-90 ease-in duration-500' />
+            <img src={photoRuangan4} alt="" className='rounded hover:scale-90 ease-in duration-500' />
           </div>
       </div>
       <div class="flex text-black justify-center gap-36 leading-loose pb-[100px]">
@@ -59,7 +70,7 @@ function LandingPage() {
       <div className="section-four grid justify-items-center pb-[100px]">
         <div className="content-photo flex bg-[#656DC6] rounded-lg w-[900px] p-5">
           <div className="left-content"> 
-            <img src="src\assets\image2.png" alt="illustration" />
+            <img src={imageTwo}alt="illustration" />
           </div>
           <div className="right-content ps-4">
              <p className='text-[30px] font-bold pt-8 pb-5'>Lihat <a  className='text-[#D2C230]'>Jadwal  </a>Ruangan Creative Hub <br/> yang Tersedia</p>
@@ -72,23 +83,23 @@ function LandingPage() {
         <div class="flex flex-row justify-center gap-4">
           <div className='row-one'>
             <div className="col pb-3">
-              <img src="src\assets\dokumentasi5.png" alt="" />
+              <img src={dokumentai5} alt="" />
             </div>
             <div className="col-two">
-              <img src="src\assets\dokumentasi3.png" alt="" />
+              <img src={dokumentai3} alt="" />
             </div>
           </div>
           <div className='row-two'>
             <div className="col pb-4">
-              <img src="src\assets\dokumentasi4.png" alt="" />
+              <img src={dokumentai4} alt="" />
             </div>
             <div className="col-two">
-              <img src="src\assets\dokumentasi1.png" alt="" />
+              <img src={dokumentai1} alt="" />
             </div>
           </div>
           <div className='row-three'>
             <div className="col">
-              <img src="src\assets\dokumentasi2.png" alt="" />
+              <img src={dokumentai2} alt="" />
             </div>
           </div>
         </div>
