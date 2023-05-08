@@ -15,6 +15,9 @@ import { ref, getDownloadURL, uploadBytesResumable } from 'firebase/storage'
 
 
 const validation = Yup.object().shape({
+    tanggalKegiatan: Yup.
+                    string().
+                    required("Tanggal Kegiatan Wajib di Isi"),
     namaIntansi: Yup.
                 string().
                 required("Nama Intansi Wajib di Isi").
@@ -130,7 +133,7 @@ function Pengajuan() {
                   </div>
 
                   {/* namaIntansi */}
-                  <div className="nama-intansi py-3 my-4">
+                  <div className="nama-intansi py-3 my-2">
                     <FileInput 
                       classNameInput={'border-zinc-500'}
                       placeholder={'Nama Intansi/Komunitas'}
@@ -142,7 +145,7 @@ function Pengajuan() {
                   </div>
 
                   {/* namaKegiatan */}
-                  <div className="nama-kegiatan py-3 my-4">
+                  <div className="nama-kegiatan py-3 my-2">
                     <FileInput 
                       classNameInput={'border-zinc-500'}
                       placeholder={'Nama Kegiatan'}
@@ -154,7 +157,7 @@ function Pengajuan() {
                   </div>
 
                   {/* Ruangan */}
-                  <div className="ruangan py-3 my-4">
+                  <div className="ruangan py-3 my-2">
                     <Label  
                       className={'leading-10 m-4 text-sm font-bold'} 
                       label={'Ruangan '}/>
@@ -213,7 +216,7 @@ function Pengajuan() {
 
                   {/* jamKegiatan */}
                   </div>
-                  <div className="jam-kegiatan flex flex-col my-4">
+                  <div className="jam-kegiatan flex flex-col my-2">
                     <Label label={'Jam Kegiatan'} className={'text-sm font-bold mt-4'}/>
                     <select 
                       onChange={handleOnChange}
@@ -233,7 +236,7 @@ function Pengajuan() {
                   </div>
 
                   {/* deskripsiKegiatan */}
-                  <div className="deskripsi-kegiatan py-3 my-4">
+                  <div className="deskripsi-kegiatan py-3 my-5">
                     <TextArea 
                       placeholder={'Deskripsi Singkat Kegiatan'}
                       rows={'5'}
