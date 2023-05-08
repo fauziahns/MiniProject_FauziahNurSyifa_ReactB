@@ -1,19 +1,25 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
-function Navbar() {
+function Navbar({className}) {
   return (
     <div className='relative '>
-      <div className="nav w-full flex p-3 text-white bg-[#15143D] justify-between font-['Montserrat'] text-sm fixed">
+      <div className={`nav w-full flex p-3 text-white bg-[#15143D] justify-between font-['Montserrat'] text-sm ${className && className}`}>
       <div className="img-logo ps-8">
+        <NavLink to={'/'}>
         <img src="\src\assets\logo.png" alt="logocreativehub" className='w-12'/>
+        </NavLink>
       </div>
       <div className="menu flex items-center ">
-        <div className="li px-5 hover:text-amber-400 active:text-amber-400"><a href="../pages/Jadwal/Jadwal">Jadwal</a></div>
-        <div className="li px-5 hover:text-amber-400 active:text-amber-400"><a href="">Pengajuan</a></div>
-        <div className="li px-5 hover:text-amber-400 active:text-amber-400"><a href="">Status Pengajuan</a></div>
-      </div>
-      <div className="login flex items-center pe-8">
-        <a href="" className='text-black p-2 px-4 rounded-md bg-amber-400 hover:bg-amber-500'>Login</a>
+        <div className="li px-5 hover:text-amber-400 active:text-amber-400">
+          <NavLink to='/StudioMusik'>Jadwal</NavLink>
+        </div>
+        <div className="li px-5 hover:text-amber-400 active:text-amber-400">
+          <NavLink to='/Pengajuan'>Pengajuan</NavLink>
+        </div>
+        <div className="li px-5 hover:text-amber-400 active:text-amber-400">
+          <NavLink to='/StatusPengajuan'>Status Pengajuan</NavLink>
+        </div>
       </div>
       </div>
     </div>

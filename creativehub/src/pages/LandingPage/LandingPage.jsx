@@ -7,7 +7,7 @@ import Footer from '../../global/Footer/Footer'
 function LandingPage() {
   return (
     <div className='bg-gradient-to-br from-cyan-50 to-yellow-50 font-[Montserrat] '>
-      <Navbar/>
+      <Navbar className={'fixed'}/>
       <Hero/>
       <div className="section text-black text-sm leading-loose text-justify pt-[120px]">
         <div className="row flex justify-center">
