@@ -114,7 +114,7 @@ function Pengajuan() {
       <div className='bg-[#FAFAFF]'>
         <Navbar/>
         <div className="hero flex justify-center">
-          <img src="\src\assets\herojadwal.png" alt="herocreativehub" />
+          <img src="src\assets\herojadwal.png" alt="herocreativehub" />
         </div>
         <div className="content-text text-black ps-[100px] pt-[40px] pb-[90px] ">
           <h1 className='font-bold text-[20px]'>Form Pengajuan Peminjaman Ruangan di Creative Hub Bandung</h1>

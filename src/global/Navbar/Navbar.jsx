@@ -7,7 +7,7 @@ function Navbar({className}) {
       <div className={`nav w-full flex p-3 text-white bg-[#15143D] justify-between font-['Montserrat'] text-sm ${className && className}`}>
       <div className="img-logo ps-8">
         <NavLink to={'/'}>
-        <img src="\src\assets\logo.png" alt="logocreativehub" className='w-12'/>
+        <img src="src\assets\logo.png" alt="logocreativehub" className='w-12'/>
         </NavLink>
       </div>
       <div className="menu flex items-center ">

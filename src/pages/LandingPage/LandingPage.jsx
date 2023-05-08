@@ -36,10 +36,10 @@ function LandingPage() {
       <div className="section-two py-[20px]">
         <h1 className='text-black font-bold text-[30px] ps-[120px] py-[50px]'>Ruangan di <a className='text-[#4750BF]'> Creative</a> Hub Bandung</h1>
           <div className="row flex gap-5 justify-center pb-[150px]">
-            <img src="\src\assets\photo-ruangan1.png" alt="" className='rounded hover:scale-90 ease-in duration-500' />
-            <img src="\src\assets\photo-ruangan2.png" alt="" className='rounded hover:scale-90 ease-in duration-500' />
-            <img src="\src\assets\photo-ruangan3.png" alt="" className='rounded hover:scale-90 ease-in duration-500' />
-            <img src="\src\assets\photo-ruangan4.png" alt="" className='rounded hover:scale-90 ease-in duration-500' />
+            <img src="src\assets\photo-ruangan1.png" alt="" className='rounded hover:scale-90 ease-in duration-500' />
+            <img src="src\assets\photo-ruangan2.png" alt="" className='rounded hover:scale-90 ease-in duration-500' />
+            <img src="src\assets\photo-ruangan3.png" alt="" className='rounded hover:scale-90 ease-in duration-500' />
+            <img src="src\assets\photo-ruangan4.png" alt="" className='rounded hover:scale-90 ease-in duration-500' />
           </div>
       </div>
       <div class="flex text-black justify-center gap-36 leading-loose pb-[100px]">
@@ -59,7 +59,7 @@ function LandingPage() {
       <div className="section-four grid justify-items-center pb-[100px]">
         <div className="content-photo flex bg-[#656DC6] rounded-lg w-[900px] p-5">
           <div className="left-content"> 
-            <img src="\src\assets\image2.png" alt="illustration" />
+            <img src="src\assets\image2.png" alt="illustration" />
           </div>
           <div className="right-content ps-4">
              <p className='text-[30px] font-bold pt-8 pb-5'>Lihat <a  className='text-[#D2C230]'>Jadwal  </a>Ruangan Creative Hub <br/> yang Tersedia</p>
@@ -72,23 +72,23 @@ function LandingPage() {
         <div class="flex flex-row justify-center gap-4">
           <div className='row-one'>
             <div className="col pb-3">
-              <img src="\src\assets\dokumentasi5.png" alt="" />
+              <img src="src\assets\dokumentasi5.png" alt="" />
             </div>
             <div className="col-two">
-              <img src="\src\assets\dokumentasi3.png" alt="" />
+              <img src="src\assets\dokumentasi3.png" alt="" />
             </div>
           </div>
           <div className='row-two'>
             <div className="col pb-4">
-              <img src="\src\assets\dokumentasi4.png" alt="" />
+              <img src="src\assets\dokumentasi4.png" alt="" />
             </div>
             <div className="col-two">
-              <img src="\src\assets\dokumentasi1.png" alt="" />
+              <img src="src\assets\dokumentasi1.png" alt="" />
             </div>
           </div>
           <div className='row-three'>
             <div className="col">
-              <img src="\src\assets\dokumentasi2.png" alt="" />
+              <img src="src\assets\dokumentasi2.png" alt="" />
             </div>
           </div>
         </div>

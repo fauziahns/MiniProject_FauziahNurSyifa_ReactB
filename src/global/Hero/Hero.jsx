@@ -13,13 +13,13 @@ function Hero() {
       </div>
       <div className="row flex gap-5 my-10 justify-center">
         <div className="col">
-          <img src="\src\assets\hero-photo3.png" alt="" />
+          <img src='src\assets\hero-photo3.png' alt="" />
         </div>
         <div className="col">
-          <img src="\src\assets\hero-photo2.png" alt="" />
+          <img src='src\assets\hero-photo2.png' alt="" />
         </div>
         <div className="col">
-          <img src="\src\assets\hero-photo1.png" alt="" />
+          <img src='src\assets\hero-photo1.png' alt="" />
         </div>
       </div>
     </div>

@@ -27,7 +27,7 @@ function Footer() {
     <div className='bg-[#221D55]'>
       <div className="row-one flex gap-[90px] pb-9 ps-3">
         <div className="col pt-9 ps-9 w-[40%]">
-          <img src="\src\assets\logo.png" alt="logo" className='w-20'/>
+          <img src="src\assets\logo.png" alt="logo" className='w-20'/>
             <div className="text-footer text-sm pt-3 leading-7">
               <p>Creative Hub Bandung</p>
               <p className=''>Jl. Laswi No.7, Kacapiring, Kec. Batununggal, Kota Bandung</p>
