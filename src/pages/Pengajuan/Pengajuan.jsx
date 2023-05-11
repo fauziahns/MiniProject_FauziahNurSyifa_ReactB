@@ -13,6 +13,8 @@ import { Navigate, useLocation, useNavigate } from 'react-router-dom'
 import { storage } from '../../firebaseconfig'
 import { ref, getDownloadURL, uploadBytesResumable } from 'firebase/storage'
 import heroJadwal from '../../assets/herojadwal.png'
+import { useMutation } from '@apollo/client'
+import { AddData, EditData, GetData } from '../../Mutation/Mutation'
 
 
 const validation = Yup.object().shape({
@@ -58,7 +60,7 @@ function Pengajuan() {
     Navigate(`/ConfirmationPage`, { state: formik.values }),
     console.log(formik.values);
     
-    const storageRef = ref(storage, `files/${formik.name.ktp}`, `files/${formik.name.suratPengajuan}`)
+    const storageRef = ref(storage, `files/${formik.values.ktp}`, `files/${formik.values.suratPengajuan}`)
     const uploadTask = uploadBytesResumable(storageRef, formik.values.ktp, formik.values.suratPengajuan)
 
     uploadTask.on("state_changed",
@@ -72,10 +74,42 @@ function Pengajuan() {
           setImgUrl(url)
         })
       }
-    )
+    ),
+    insertData({
+      variables: {
+        object: {
+          tanggalKegiatan: formik.values.tanggalKegiatan,
+          namaIntansi: formik.values.namaIntansi,
+          namaKegiatan: formik.values.namaKegiatan,
+          ruangan: formik.values.ruangan,
+          jamKegiatan: formik.values.jamKegiatan,
+          deskripsiKegiatan: formik.values.deskripsiKegiatan,
+          ktp: formik.values.ktp,
+          suratPengajuan: formik.values.suratPengajuan
+        }
+      }
+    }),
+    editDataPengajuan({
+      variables: {
+        tanggalKegiatan: formik.values.tanggalKegiatan,
+        namaIntansi: formik.values.namaIntansi,
+        namaKegiatan: formik.values.namaKegiatan,
+        ruangan: formik.values.ruangan,
+        jamKegiatan: formik.values.jamKegiatan,
+        deskripsiKegiatan: formik.values.deskripsiKegiatan,
+        ktp: formik.values.ktp,
+        suratPengajuan: formik.values.suratPengajuan
+      }
+    })
   }
 
-  console.log(state);
+  const [insertData] = useMutation(AddData, {
+    refetchQueries: [GetData]
+    })
+  
+  const [editDataPengajuan] = useMutation(EditData, {
+    refetchQueries: [GetData]
+  })
 
   const formik = useFormik({
     initialValues: {

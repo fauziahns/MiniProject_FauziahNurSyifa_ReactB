@@ -37,3 +37,21 @@ export const DeleteData = gql `
     }
   } 
 `
+export const EditData = gql `
+  mutation MyMutation($namaIntansi: String = "", $tanggalKegiatan: String = "", $jamKegiatan: String = "", $namaKegiatan: String = "", $ruangan: String = "", $deskripsiKegiatan: String = "", $ktp: String = "", $suratPengajuan: String = "" ) {
+    update_table_pengajuan_by_pk(
+      pk_columns: {namaIntansi : $namaIntansi},
+      _set: {
+        tanggalKegiatan : $tanggalKegiatan, jamKegiatan: $jamKegiatan, namaKegiatan : $namaKegiatan, ruangan : $ruangan, deskripsiKegiatan : $deskripsiKegiatan, ktp: $ktp, suratPengajuan: $suratPengajuan
+      }) {
+      namaIntansi
+      tanggalKegiatan
+      jamKegiatan
+      namaKegiatan
+      ruangan
+      deskripsiKegiatan
+      ktp
+      suratPengajuan
+    }
+  }
+`

@@ -13,27 +13,9 @@ function KonfirmasiPengajuan() {
 
  const Navigate = useNavigate()
  const handleSubmit = () => {
-  Navigate(`/StatusPengajuan`),
-  insertData({
-      variables: {
-        object: {
-          tanggalKegiatan: state.tanggalKegiatan,
-          namaIntansi: state.namaIntansi,
-          namaKegiatan: state.namaKegiatan,
-          ruangan: state.ruangan,
-          jamKegiatan: state.jamKegiatan,
-          deskripsiKegiatan: state.deskripsiKegiatan,
-          ktp: state.ktp,
-          suratPengajuan: state.suratPengajuan
-        }
-      }
-    })
+  Navigate(`/StatusPengajuan`)
   }
-
- const [insertData] = useMutation(AddData, {
-  refetchQueries: [GetData]
-  })
-
+  
   const handleEdit = () => {
     Navigate(`/Pengajuan`, {state} )
   }
